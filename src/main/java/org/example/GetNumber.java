@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class GetNumber {
 
-    public static Double getNumber(Scanner input, Integer index) {
+    public static Double getNumber(Integer index) {
+        Scanner input = new Scanner(System.in);
         double value = 0;
 
         try {
@@ -14,7 +15,7 @@ public class GetNumber {
         } catch (Exception e) {
             if (e instanceof InputMismatchException) System.out.println("Only numbers are allowed.");
             System.out.println(e.getMessage());
-            getNumber(input, index);
+            getNumber(index);
         }
 
         return value;

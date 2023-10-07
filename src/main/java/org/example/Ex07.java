@@ -9,7 +9,7 @@ public class Ex07 {
        double[] notes = new double[4];
 
        for (int i = 0; i < notes.length; i++) {
-           notes[i] = GetNumber.getNumber(new Scanner(System.in), i);
+           notes[i] = GetNumber.getNumber(i);
        }
 
        System.out.printf("Average: %.2f",

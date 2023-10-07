@@ -9,7 +9,7 @@ public class Ex06 {
         double[] numbers = new double[5];
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = GetNumber.getNumber(new Scanner(System.in), i);
+            numbers[i] = GetNumber.getNumber(i);
         }
 
         double sum = Arrays.stream(numbers).max().orElseThrow() +

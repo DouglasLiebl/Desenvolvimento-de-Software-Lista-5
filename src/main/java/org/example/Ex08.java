@@ -14,7 +14,7 @@ public class Ex08 {
         int minInd = 0, maxInd = 0;
 
         for (int i = 0; i < values.length; i++) {
-            values[i] = GetNumber.getNumber(new Scanner(System.in), i);
+            values[i] = GetNumber.getNumber(i);
 
             if (values[i] > max) {
                 max = values[i];

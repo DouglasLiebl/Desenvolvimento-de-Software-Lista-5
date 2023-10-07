@@ -9,7 +9,7 @@ public class Ex05 {
         int count = 0;
 
         for (int i = 0; i < values.length; i++) {
-            values[i] = GetNumber.getNumber(new Scanner(System.in), i);
+            values[i] = GetNumber.getNumber(i);
 
             if ((values[i] % 2) == 0) count += 1;
         }
