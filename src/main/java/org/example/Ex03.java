@@ -7,10 +7,15 @@ import java.util.Random;
 
 public class Ex03 {
 
-    private static List<Integer> roll() {
+    public static List<Integer> roll() {
         List<Integer> numbers = new ArrayList<>();
         try {
-            for(int i = 0; i < 2; i++) numbers.add(new Random().nextInt(6));
+            for(int i = 0; i < 2; i++) {
+                int number = new Random().nextInt(7);
+
+                if (number == 0) number += 1;
+                numbers.add(number);
+            }
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
